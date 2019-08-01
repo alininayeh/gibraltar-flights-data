@@ -2,7 +2,7 @@ const http = require('http');
 const request = require('request');
 const cheerio = require('cheerio');
 const URL = 'http://www.gibraltarairport.gi/content/live-flight-info';
-const PORT = 8888;
+const PORT = process.env.PORT || 8888;
 const CACHE_TIME_IN_SECONDS = 60;
 
 const Api = {
